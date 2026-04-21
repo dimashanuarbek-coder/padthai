@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A bold, interactive Pad Thai recipe web app." />
+    <title>Pad Thai Recipe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="shell">
+      <section class="hero card">
+        <div class="hero-copy">
+          <p class="eyebrow">Weeknight favorite</p>
+          <h1>Pad Thai</h1>
+          <p class="lede">
+            A bright, savory-sweet stir-fry with chewy rice noodles, tamarind, lime,
+            and crunchy peanuts.
+          </p>
+
+          <div class="stats" aria-label="Recipe facts">
+            <div class="stat">
+              <span class="stat-label">Prep</span>
+              <strong>15 min</strong>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Cook</span>
+              <strong>10 min</strong>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Serves</span>
+              <strong id="serving-count">2</strong>
+            </div>
+          </div>
+
+          <div class="controls" aria-label="Serving size controls">
+            <button class="chip is-active" type="button" data-scale="1">2 servings</button>
+            <button class="chip" type="button" data-scale="2">4 servings</button>
+            <button class="chip" type="button" data-scale="3">6 servings</button>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-card">
+            <p class="panel-label">Sauce profile</p>
+            <div class="meter">
+              <span style="width: 88%"></span>
+            </div>
+            <ul class="panel-notes">
+              <li>Sweet from palm sugar</li>
+              <li>Sharp from tamarind and lime</li>
+              <li>Deep saltiness from fish sauce</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="content-grid">
+        <article class="card section-card">
+          <div class="section-head">
+            <h2>Ingredients</h2>
+            <p>Toggle servings to rescale the amounts automatically.</p>
+          </div>
+
+          <div class="ingredients-layout">
+            <div>
+              <h3>Noodles</h3>
+              <ul class="ingredient-list" data-group="noodles"></ul>
+            </div>
+            <div>
+              <h3>Sauce</h3>
+              <ul class="ingredient-list" data-group="sauce"></ul>
+            </div>
+            <div>
+              <h3>Stir-Fry</h3>
+              <ul class="ingredient-list" data-group="stirfry"></ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card section-card">
+          <div class="section-head">
+            <h2>Method</h2>
+            <p>Cook hot and fast so the noodles stay springy.</p>
+          </div>
+
+          <ol class="steps"></ol>
+
+          <div class="tips">
+            <h3>Notes</h3>
+            <ul>
+              <li>Add a splash of water if the noodles seem dry.</li>
+              <li>Adjust the sauce at the end with lime, sugar, or fish sauce.</li>
+              <li>Use tofu and soy sauce for a vegetarian version.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+ </html>
